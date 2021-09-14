@@ -7,11 +7,20 @@ function reV()
 }
 function alph_change()
 {
-    var alph = String (document.querySelector('#alph').value);
-    if (alph=="") alph="string empty!!"
-    alph = alph.toLowerCase();
-    alph = alph.split("").sort().join("");
+    var alph = String (document.querySelector('.alph').value)
+    if (alph=="") 
+        alph="string empty!!"
+    else{
+        alph = alph.toLowerCase()
+        alph = alph.split("").sort().join("")
+    }
+    document.getElementById("alphi").innerHTML = alph
+}
+function first_letter()
+{
+    var letter = String(document.querySelector('.upper1').value);
+    letter = letter.CharAt(0).toUpperCase
+    document.getElementById('upper2').innerHTML = letter;
 
-    document.getElementById("alphi").innerHTML = alph;
 }
 
