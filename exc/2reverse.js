@@ -5,11 +5,13 @@ function reV()
     var num2= num1.split("").reverse().join("");
     document.getElementById("rev").innerHTML = num2;
 }
-function palCheck()
+function alph_change()
 {
-    var pal = String (document.querySelector('#pal').value);
-    if (pal=="") pal="string empty!!"
-    pal = pal.toLowerCase();
+    var alph = String (document.querySelector('#alph').value);
+    if (alph=="") alph="string empty!!"
+    alph = alph.toLowerCase();
+    alph = alph.split("").sort().join("");
 
-    document.getElementById("pali").innerHTML = pal;
+    document.getElementById("alphi").innerHTML = alph;
 }
+
