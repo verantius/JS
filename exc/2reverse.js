@@ -19,7 +19,12 @@ function alph_change()
 function first_letter()
 {
     var letter = String(document.querySelector('.upper1').value);
+    
+    var array = letter.split(' ')
+    var array_2 = [];
+    for ()
     letter = letter.CharAt(0).toUpperCase
+    
     document.getElementById('upper2').innerHTML = letter;
 
 }
