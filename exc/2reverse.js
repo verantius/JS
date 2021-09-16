@@ -22,7 +22,10 @@ function first_letter()
     
     var array = letter.split(' ')
     var array_2 = [];
-    for ()
+    for (var i=0;i<letter.length;i++)
+    {
+        array_2.push(array[i].charAt(0).toUpperCase()+array[i].slice(1))
+    }
     letter = letter.CharAt(0).toUpperCase
     
     document.getElementById('upper2').innerHTML = letter;
