@@ -29,6 +29,22 @@ function first_letter()
     }
     var array_2 = array_2.join(' ')
     document.getElementById('upper2').innerHTML = array_2
+}
+
+function longest()
+{
+    var long = String(document.querySelector('.longest_1').value)
+
+    var array = long.split(' ')
+    var arr_lg = array[0] 
+
+    for (var i=0; i<array.length; i++)
+    {
+        if (array[i].length > arr_lg.length)
+            arr_lg=array[i];
+    }
+
+    document.getElementById('longest_2').innerHTML = arr_lg
 
 }
 
