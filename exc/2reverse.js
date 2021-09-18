@@ -18,17 +18,17 @@ function alph_change()
 }
 function first_letter()
 {
-    var letter = String(document.querySelector('.upper1').value);
+    var letter = String(document.querySelector('.upper1').value)
     
-    var array = letter.split(' ');
-    var array_2 = [];
-    for (var i=0;i<letter.length;i++)
+    var array = letter.split(' ')
+    var array_2 = []
+
+    for (var i=0;i<array.length;i++)
     {
-        array_2.push(array[x].charAt(0).toUpperCase()+array[x].slice(1));
-        document.getElementById('upper2').innerHTML = array_2;
+        array_2.push(array[i].charAt(0).toUpperCase()+array[i].slice(1))
     }
-    var array_2 = array_2.join(' ');
-    document.getElementById('upper2').innerHTML = array_2;
+    var array_2 = array_2.join(' ')
+    document.getElementById('upper2').innerHTML = array_2
 
 }
 
