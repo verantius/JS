@@ -20,15 +20,15 @@ function first_letter()
 {
     var letter = String(document.querySelector('.upper1').value);
     
-    var array = letter.split(' ')
+    var array = letter.split(' ');
     var array_2 = [];
     for (var i=0;i<letter.length;i++)
     {
-        array_2.push(array[i].charAt(0).toUpperCase()+array[i].slice(1))
+        array_2.push(array[x].charAt(0).toUpperCase()+array[x].slice(1));
+        document.getElementById('upper2').innerHTML = array_2;
     }
-    letter = letter.CharAt(0).toUpperCase
-    
-    document.getElementById('upper2').innerHTML = letter;
+    var array_2 = array_2.join(' ');
+    document.getElementById('upper2').innerHTML = array_2;
 
 }
 
