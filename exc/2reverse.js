@@ -50,6 +50,14 @@ function longest()
 
 function isPrime()
 {
-    
+    var prime = Number (document.querySelector('.prime_1').value)
+    prime%2==0
+    if (prime == 1)
+        var prime2 = "Nieparzysta"
+    else if () 
+        prime = 4  
+
+    document.getElementById('prime_2').innerHTML = prime2
+
 }
 
