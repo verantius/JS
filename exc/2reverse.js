@@ -48,3 +48,8 @@ function longest()
 
 }
 
+function isPrime()
+{
+    
+}
+
