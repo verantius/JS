@@ -90,4 +90,8 @@ function isPrime()
     document.getElementById('prime_2').innerHTML = prime2
 
 }
+function dev()
+{
+    
+}
 
