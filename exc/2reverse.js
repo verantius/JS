@@ -51,12 +51,42 @@ function longest()
 function isPrime()
 {
     var prime = Number (document.querySelector('.prime_1').value)
-    prime%2==0
-    if (prime == 1)
-        var prime2 = "Nieparzysta"
-    else if () 
-        prime = 4  
+    var prime2
+   
+//parzysta czy nieparzysta
 
+    // if (prime == 1)
+    //     prime2 = "Nieparzysta";
+    // else if (prime == 2)
+    //     prime2 = "Parzysta";
+    // else if (prime%2==0)
+    //     prime2 = "parzysta";
+    // else if (prime%2==1)
+    //     prime2 = "nieparzysta";
+    // else
+    //     prime2 = "error";
+
+//czy pierwsza
+    if (prime == 1)
+        prime2 = "Nieparzysta";
+    else if (prime == 2)
+        prime2 = "Parzysta";
+    else
+    {
+        prime2="liczba pierwsza"       
+        for (let i=2;i<prime;i++)
+        {
+            if(prime%i===0)
+            {
+                prime2 = "nie Pierwsza";
+                break;    
+            }
+        }
+
+    }
+
+      
+        
     document.getElementById('prime_2').innerHTML = prime2
 
 }
