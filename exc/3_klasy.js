@@ -57,7 +57,9 @@ console.log(book2.getSummary())
     }
 
     //Create Object
-    const book1 = Object.create(bookProtos);
-    book1.title = 'Book One';
-    book1.title = 'Book One';
-    book1.title = 'Book One';
+    const book4 = Object.create(bookProtos);
+    book1.title = 'Witcher';
+    book1.author = 'Sapkowski';
+    book1.year = '1990';
+
+    console.log(book4);
