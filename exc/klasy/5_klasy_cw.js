@@ -1,16 +1,17 @@
 var student = {
-    name: 'Robert Bacc',
+    firstname: 'Paweł',
+    lastname:'Kowalski',
+    ID: 543231,
     sclass: 'VI',
-    rollno: 12
+    age: 22
 
 }
-console.log(student)
-delete student.rollno;
-console.log(student)
 
-student.age= 17
-console.log(student.age)
+let y, txt=''
+for (y in student) 
+    txt += student[y] + "<br>"
 
 
 
-document.getElementById('fill').innerHTML = student.name+" is "+student.age;
+//document.getElementById("fill").innerHTML = `student ${student.firstname} ${student.lastname} ma ${student.age} lata`;
+document.getElementById("fill").innerHTML = txt
