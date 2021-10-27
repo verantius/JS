@@ -15,7 +15,10 @@ class Book {
         this.year = newYear;
         this.revised=true;
     }
-    
+    //klasa spina wszystkie obiekty, które posiadają właśćiwośći 
+    //metody to wszystkie akcje wykonywane na obiektach 
+    //w metodach mozna uzywac this.
+    //klasy i konstruktory z duzej litery
 }
 //Instatiate Object
 const Diuna = new Book('Diuna','Frank Herbert','1965');
