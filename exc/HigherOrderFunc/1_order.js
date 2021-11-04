@@ -83,13 +83,44 @@ const ages = [33,12,20,16,5,54,21,44,61,13,15,45,25,64,32]
     console.log(ageMap)
 //----sort----
     //sort companies by start year (hard way)
-    const sortedCompanies = companies.sort(function(c1, c2) {
+    const sortedCompanies1 = companies.sort(function(c1, c2) {
         if(c1.start > c2.start)
             return 1;
         else    
             return -1;
     })
-    console.log('--')
-    console.log(sortedCompanies)
-//----reduce----
+    console.log(sortedCompanies1)
 
+    //sort comapniest (easier way)
+    const sortedCompanies2 = companies.sort((a,b) => (a.start > b.start ? 1 : -1))
+    console.log(sortedCompanies2)
+    
+    //sort ages
+    const sortAges = ages.sort((a,b)=> a - b)  //zwykły sort patrzy tylko na pierwszą liczbę
+    
+    console.log(sortAges)
+    //----reduce----
+    
+    let ageSum = 0
+    for (let i=0; i<ages.length; i++) {
+        ageSum += ages[i];
+    }
+    console.log(ageSum)
+    
+    //long way
+    const ageSum1 = ages.reduce(function(total, age) {
+        return total+age;
+    },0)
+    console.log(ageSum1)
+    //shorter way
+    const ageSum2 = ages.reduce((total, age) => total+age, 0)
+    console.log(ageSum2)
+    //get total years for companies
+    const totalYears1 = companies.reduce(function(total, company){
+        return total + (company.end - company.start)
+    },0)
+    console.log(totalYears1)
+    
+    console.log('--')
+    const totalYears2 = companies.reduce((total,company) => total +(company.end - company.start),0)
+    console.log(totalYears2)
