@@ -1,3 +1,4 @@
+//this is object inside array
 const companies = [
     {name: "Apple", category: "Technology", start: 1995, end:2022},
     {name: "Facebook", category: "Social Media", start: 2007, end:2021},
